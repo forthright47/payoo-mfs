@@ -73,5 +73,24 @@
             </button>
         </div>
     </section>
+
+    <section class="w-11/12 mx-auto py-3">
+        <h2 class="text-xl font-bold mb-5">Cashout</h2>
+        <div class="card bg-base-100 w-full shadow rounded-2xl">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold">Agent Number</label>
+            <input id="cashout-number" minlength="11" maxlength="11" type="text" class="input rounded-full w-full bg-base-200" placeholder="Enter 11 digit number" />
+
+            <label class="label text-neutral font-bold mt-3">Amount</label>
+            <input id="cashout-amount" type="number" class="input w-full rounded-full bg-base-200" placeholder="Enter amount to withdraw" />
+
+            <label class="label text-neutral font-bold mt-3">Pin Number</label>
+            <input id="cashout-pin" type="password" maxlength="4" class="input w-full rounded-full bg-base-200" placeholder="Enter 4 digit pin number" />
+            <button id="cashout-btn" class="btn btn-primary mt-5 w-full rounded-full">Withdraw Money</button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
 </body>
 </html>
