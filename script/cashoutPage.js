@@ -70,6 +70,19 @@ document.getElementById("cashout-btn").addEventListener("click", function(){
         console.log("New Balance", newBalance);
         // document.getElementById("balance").innerText = newBalance;
         setBalance(newBalance);
+
+        // 1. Get history-container
+        const history = document.getElementById("history-container");
+        // 2. Create new div
+        const newHistory = document.createElement("div");
+        // 3. Add innerHTML to the new div
+        newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-100 rounded-xl">
+            Cashout ${cashoutAmount} Taka successfully to ${cashoutNumber} at ${new Date()}
+        </div>
+        `;
+        // 4. Append new div to the history-container
+        history.append(newHistory);
     }
     else{
         alert("Invalid Pin");

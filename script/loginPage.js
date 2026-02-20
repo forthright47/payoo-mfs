@@ -18,7 +18,7 @@ document.getElementById("login-btn").addEventListener("click", function(){
         // true > alert > homepage
         alert("Login successfully");
 
-        window.location.assign("home.html");
+        window.location.assign("/home.html");
     }
     else{
         // false > alert > return
