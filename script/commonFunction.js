@@ -7,3 +7,17 @@ function getValueFromInput(id){
     console.log(id, value);
     return value;
 }
+
+// function: return current balance
+function getBalance(){
+    const balanceElement = document.getElementById("balance");
+    const balance = balanceElement.innerText;
+    console.log("Current Balance:", Number(balance));
+    return Number(balance);
+}
+
+// function: set balance
+function setBalance(value){
+    const balanceElement = document.getElementById("balance");
+    balanceElement.innerText = value;
+}
