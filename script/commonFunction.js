@@ -21,3 +21,18 @@ function setBalance(value){
     const balanceElement = document.getElementById("balance");
     balanceElement.innerText = value;
 }
+
+// function: id > hide all > show specific id
+function showOnly(id){
+    const addMoney = document.getElementById("add-money");
+    const cashOut = document.getElementById("cashout");
+    // console.log(`Add Money - ${addMoney}, Cashout - ${cashOut}`);
+
+    // hide all
+    addMoney.classList.add("hidden");
+    cashOut.classList.add("hidden");
+
+    // select the passed id element and remove hidden class from it
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
